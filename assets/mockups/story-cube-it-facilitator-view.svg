@@ -1,0 +1,108 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Story Cube IT facilitator view mockup">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4f9ff"/>
+      <stop offset="100%" stop-color="#fff6ef"/>
+    </linearGradient>
+    <linearGradient id="top" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0a4f7a"/>
+      <stop offset="100%" stop-color="#1f7aa6"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#10344a" flood-opacity="0.22"/>
+    </filter>
+    <style>
+      .t1 { font: 700 42px 'Segoe UI', Tahoma, sans-serif; fill: #ffffff; }
+      .t2 { font: 500 20px 'Segoe UI', Tahoma, sans-serif; fill: #dcefff; }
+      .h2 { font: 700 28px 'Segoe UI', Tahoma, sans-serif; fill: #0b2545; }
+      .h3 { font: 700 22px 'Segoe UI', Tahoma, sans-serif; fill: #12355b; }
+      .body { font: 500 17px 'Segoe UI', Tahoma, sans-serif; fill: #355070; }
+      .small { font: 500 14px 'Segoe UI', Tahoma, sans-serif; fill: #5c6f82; }
+      .chip { font: 700 15px 'Segoe UI', Tahoma, sans-serif; fill: #ffffff; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#bg)"/>
+
+  <rect x="44" y="30" width="1512" height="170" rx="24" fill="url(#top)" filter="url(#shadow)"/>
+  <text x="84" y="95" class="t1">Story Cube IT - Facilitator View</text>
+  <text x="84" y="132" class="t2">Design for inclusion learning: guide, observe, debrief.</text>
+
+  <rect x="84" y="148" width="210" height="38" rx="19" fill="#f8961e"/>
+  <text x="112" y="173" class="chip">Mode: Collaborative</text>
+  <rect x="310" y="148" width="180" height="38" rx="19" fill="#2fbf71"/>
+  <text x="339" y="173" class="chip">Players: 3</text>
+  <rect x="506" y="148" width="220" height="38" rx="19" fill="#f9c74f"/>
+  <text x="535" y="173" class="chip" style="fill:#3a2a00;">Round: 10 minutes</text>
+
+  <rect x="56" y="232" width="768" height="340" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="88" y="280" class="h2">1) Mandatory Objective (Message-First)</text>
+  <rect x="88" y="302" width="704" height="132" rx="14" fill="#e6f4ff"/>
+  <text x="112" y="342" class="h3">Team objective</text>
+  <text x="112" y="376" class="body">Include one perspective that is usually underrepresented in IT decisions.</text>
+  <text x="112" y="407" class="small">Facilitator note: this is a shared commitment, not an individual vote.</text>
+
+  <text x="88" y="466" class="h3">Round prompt</text>
+  <rect x="88" y="485" width="704" height="54" rx="12" fill="#f1f5f9"/>
+  <text x="110" y="518" class="body">How does your solution reduce exclusion risk in a digital journey?</text>
+
+  <rect x="56" y="598" width="768" height="346" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="88" y="646" class="h2">2) Live Facilitation Panel</text>
+
+  <rect x="88" y="667" width="220" height="120" rx="14" fill="#fef3c7"/>
+  <text x="108" y="707" class="h3">Timer</text>
+  <text x="108" y="742" class="body">08:42 remaining</text>
+
+  <rect x="324" y="667" width="220" height="120" rx="14" fill="#dcfce7"/>
+  <text x="344" y="707" class="h3">Turn</text>
+  <text x="344" y="742" class="body">Player 2 speaking</text>
+
+  <rect x="560" y="667" width="232" height="120" rx="14" fill="#dbeafe"/>
+  <text x="580" y="707" class="h3">Safety check</text>
+  <text x="580" y="742" class="body">Respectful tone: OK</text>
+
+  <rect x="88" y="804" width="704" height="118" rx="14" fill="#f8fafc"/>
+  <text x="108" y="842" class="h3">Facilitator prompts</text>
+  <text x="108" y="873" class="body">- Which perspective are we missing?</text>
+  <text x="108" y="901" class="body">- What assumption should we challenge?</text>
+
+  <rect x="852" y="232" width="692" height="712" rx="22" fill="#ffffff" filter="url(#shadow)"/>
+  <text x="884" y="280" class="h2">3) Dice + Reflection Signals</text>
+
+  <rect x="884" y="304" width="206" height="206" rx="20" fill="#edf2ff"/>
+  <text x="906" y="340" class="h3">AI Die</text>
+  <rect x="936" y="364" width="104" height="104" rx="18" fill="#ffffff" stroke="#bfd3ff"/>
+  <text x="956" y="425" class="body">Prompt</text>
+  <text x="906" y="490" class="small">Placeholder for real die graphic</text>
+
+  <rect x="1111" y="304" width="206" height="206" rx="20" fill="#ecfeff"/>
+  <text x="1133" y="340" class="h3">Cloud Die</text>
+  <rect x="1163" y="364" width="104" height="104" rx="18" fill="#ffffff" stroke="#bde7f2"/>
+  <text x="1183" y="425" class="body">API</text>
+  <text x="1133" y="490" class="small">Placeholder for real die graphic</text>
+
+  <rect x="1338" y="304" width="206" height="206" rx="20" fill="#fff7ed"/>
+  <text x="1360" y="340" class="h3">People Die</text>
+  <rect x="1390" y="364" width="104" height="104" rx="18" fill="#ffffff" stroke="#ffd5a1"/>
+  <text x="1401" y="425" class="body">Access</text>
+  <text x="1360" y="490" class="small">Placeholder for real die graphic</text>
+
+  <rect x="884" y="534" width="660" height="168" rx="16" fill="#f7fbff"/>
+  <text x="910" y="574" class="h3">Non-Competitive Signals</text>
+  <text x="910" y="606" class="body">Inclusion signal (team-level):</text>
+  <rect x="910" y="620" width="420" height="12" rx="6" fill="#dbe7f0"/>
+  <rect x="910" y="620" width="305" height="12" rx="6" fill="#2a9d8f"/>
+  <text x="910" y="658" class="small">Use for debrief and progress, never for ranking people.</text>
+
+  <rect x="884" y="720" width="660" height="152" rx="16" fill="#f1f8e9"/>
+  <text x="910" y="760" class="h3">KPI Export (session)</text>
+  <text x="910" y="792" class="body">- Active participation</text>
+  <text x="910" y="820" class="body">- Distinct ideas generated</text>
+  <text x="1260" y="792" class="body">- Inclusion insights captured</text>
+  <text x="1260" y="820" class="body">- Actions committed</text>
+
+  <rect x="1188" y="886" width="156" height="42" rx="21" fill="#0b6e4f"/>
+  <text x="1223" y="913" class="chip">Export XLSX</text>
+  <rect x="1360" y="886" width="156" height="42" rx="21" fill="#2d6a4f"/>
+  <text x="1397" y="913" class="chip">Export JSON</text>
+</svg>

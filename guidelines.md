@@ -1,0 +1,9 @@
+1. Basic Storytelling: Using at least three cubes, throw each one. Now tell a short story using the three face-up sides of the cubes.
+2. Advanced Story-telling: Challenge yourself to tell a story using all the sides of one story cube.
+3. Six-Word Stories: Write or tell a six-word story using one side of the cube. If you really want a challenge, try adding two story cube images into one, six-word story.
+4. Collaborative story-telling: This  game is very similar to the Finish the Story game! In a group of at least 5 players, tell a story collaboratively. For this activity, each player rolls a random story cube. The first player starts the story off using the image faced up on their cube. Then the next player picks a story cube and rolls that out. They then continue the story from the previous player using the image on their  dice. Carry on until the story is complete or until all players have had two to three goes each.
+5. Build Friendships: Story cubes are great way to get to know each other. Working in pairs, each player rolls out the story cube. Whatever the story cube lands on, the player must either tell a personal story relating to that image or provide an interesting fact about the image.
+6. Idea Generation: Roll out three story cubes. Whatever images are faced up, use all these to come up with at least 3 different story ideas.
+7. Character Cubes: Roll out a character story cube. Now you must write a short description to describe this character.
+8. Role-playing activity: For this activity, you need two players. Each player has their own character cube. They both roll their cubes and whatever character is facing upwards, they will need to pretend to talk like their character to each other. This is great for developing dialogue, communication skills and as a script-writing activity. You might even be interested in creating your own paper finger puppets!
+
