@@ -1,31 +1,59 @@
 # Story Cube - I&D Edition
 
-An interactive collaborative storytelling game designed to promote Inclusion and Diversity through gamification, shared narrative building, and self-awareness.
+An interactive collaborative game that transforms Inclusion and Diversity from concept into lived experience through storytelling, gamification, and self-awareness.
 
 ## Why It Matters
 
-This project transforms inclusion from theory into practice by:
+Inclusion is not only about representation. It is also about how people think, contribute, and collaborate.
 
-- Encouraging diverse thinking styles
-- Valuing different types of contributions
-- Promoting team awareness and reflective collaboration
+Story Cube helps teams:
+
+- Experience inclusion in action
+- Value different cognitive styles
+- Build individual and team awareness
+
+## Core Experience
+
+Players take turns rolling three thematic dice (tech and inclusion prompts) and collaboratively build a shared story.
+
+Each contribution is:
+
+- Visible
+- Valued
+- Uniquely different
 
 ## Key Features
 
-- Dice-based storytelling with tech and inclusion prompts
-- Multi-dimensional contribution scoring
-- Archetype-based player profiling
-- Collaborative turn-based narrative flow
-- Local mode and Supabase shared-room multiplayer mode
-- End-of-session export (JSON and XLSX)
+- Dice-driven storytelling with tech and I&D prompts
+- Collaborative narrative timeline with chat-like flow
+- Multi-dimensional scoring:
+	- Creativity
+	- Technical coherence
+	- Inclusivity
+	- Collaboration
+- Archetype profiling for each player
+- Multiplayer mode with Supabase shared rooms
+- Exportable session results (JSON and XLSX)
+
+## Archetype System (Core Insight)
+
+At the end of each session, every player receives a contribution profile such as:
+
+- Creative: imagination and storytelling
+- Logical: structured and analytical thinking
+- Empathetic: focus on people and inclusion
+- Innovator: out-of-the-box thinking
+- Connector: linking ideas and perspectives
+
+The goal is not competition. The goal is self-awareness and team awareness.
 
 ## How It Works
 
 1. Select number of players.
-2. Enter player nicknames.
-3. Roll three dice and get prompts.
-4. Contribute to the shared story.
-5. Get final archetype profiles and export outcomes.
+2. Enter nicknames.
+3. Roll the dice.
+4. Build the story collaboratively.
+5. Receive archetype profiles.
 
 ## Screens
 
@@ -40,55 +68,38 @@ This project transforms inclusion from theory into practice by:
 - Streamlit
 - Pandas
 - OpenPyXL
-- Supabase Python client
+- Supabase (multiplayer persistence)
 
 ## Architecture
 
-- `app.py`: Streamlit UI and game orchestration
-- `src/story_cube/models.py`: domain models
-- `src/story_cube/collaborative_game.py`: turn loop and state transitions
-- `src/story_cube/scoring.py`: multi-dimensional scoring logic
-- `src/story_cube/archetypes.py`: archetype mapping
-- `src/story_cube/reviewer_agent.py`: automated review and archetype hints
-- `src/story_cube/multiplayer_store.py`: Supabase room persistence
+- `app.py`: UI and orchestration
+- `src/story_cube/models.py`: domain entities
+- `src/story_cube/collaborative_game.py`: game loop
+- `src/story_cube/scoring.py`: evaluation logic
+- `src/story_cube/archetypes.py`: profile mapping
+- `src/story_cube/reviewer_agent.py`: automated scoring hints
+- `src/story_cube/multiplayer_store.py`: shared room persistence
 - `src/story_cube/cube_data.py`: dice packs and prompts
 
 ## Quick Start
 
-1. Create and activate a virtual environment.
-2. Install dependencies.
-
 ```bash
 pip install -r requirements.txt
-```
-
-3. Run the app.
-
-```bash
 streamlit run app.py
 ```
 
-## Multiplayer Setup (Supabase)
+## Multiplayer Setup
 
-For shared-room multiplayer, configure Supabase and Streamlit secrets:
+Set these environment variables (or Streamlit secrets):
 
 - `SUPABASE_URL`
 - `SUPABASE_ANON_KEY`
 
-Full setup guide: `docs/supabase_multiplayer_setup.md`.
-
-## Repository Structure
-
-- `app.py`: Streamlit entrypoint
-- `src/story_cube/`: game engine and domain modules
-- `data/sessions/`: exported game sessions
-- `design/`: UI mockups and reference screens
-- `docs/`: architecture and setup notes
-- `tests/`: smoke and validation tests
+Full guide: `docs/supabase_multiplayer_setup.md`
 
 ## Roadmap
 
-- Facilitator mode dashboard (team-level recap)
-- Smarter scoring signals and prompt adaptation
-- Additional themed dice packs
-- Presentation-ready report exports
+- Facilitator dashboard with team insights
+- Smarter scoring with AI-assisted signals
+- Custom themed dice packs
+- Presentation-ready reports
