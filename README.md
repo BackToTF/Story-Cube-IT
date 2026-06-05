@@ -1,57 +1,94 @@
-# Story Cube IT - Inclusion and Diversity
+# Story Cube - I&D Edition
 
-Story Cube IT is a custom game to build creativity for data and AI-era skills such as orchestration thinking, collaboration, and inclusive decision making.
+An interactive collaborative storytelling game designed to promote Inclusion and Diversity through gamification, shared narrative building, and self-awareness.
 
-## Project structure
+## Why It Matters
 
-- app.py: Streamlit app entrypoint
-- src/story_cube/: game engine and domain modules
-- data/sessions/: exported game sessions (JSON and XLSX)
-- data/templates/: CSV templates for group setup and feedback
-- assets/: cube icons or visual assets
-- assets/mockups/story-cube-it-facilitator-view.svg: facilitator-focused mockup
-- assets/dice/it-dice-pack-spec.md: spec for real IT-themed dice graphics
-- docs/architecture-story-cube-tech-inclusion.md: modular architecture and game design
-- tests/: engine smoke tests
-- scripts/run.ps1: convenience script to run the app
-- scripts/demo_collaborative_game.py: basic collaborative game simulation
-- guidelines.md: base gameplay ideas
+This project transforms inclusion from theory into practice by:
 
-## Quick start
+- Encouraging diverse thinking styles
+- Valuing different types of contributions
+- Promoting team awareness and reflective collaboration
+
+## Key Features
+
+- Dice-based storytelling with tech and inclusion prompts
+- Multi-dimensional contribution scoring
+- Archetype-based player profiling
+- Collaborative turn-based narrative flow
+- Local mode and Supabase shared-room multiplayer mode
+- End-of-session export (JSON and XLSX)
+
+## How It Works
+
+1. Select number of players.
+2. Enter player nicknames.
+3. Roll three dice and get prompts.
+4. Contribute to the shared story.
+5. Get final archetype profiles and export outcomes.
+
+## Screens
+
+- Setup: ![Setup screen](design/setup_page.png)
+- Nicknames: ![Nickname screen](design/nickname_setup.png)
+- Game: ![Game screen](design/gaming_page.png)
+- Results: ![Results screen](design/results_page.png)
+
+## Tech Stack
+
+- Python 3.14
+- Streamlit
+- Pandas
+- OpenPyXL
+- Supabase Python client
+
+## Architecture
+
+- `app.py`: Streamlit UI and game orchestration
+- `src/story_cube/models.py`: domain models
+- `src/story_cube/collaborative_game.py`: turn loop and state transitions
+- `src/story_cube/scoring.py`: multi-dimensional scoring logic
+- `src/story_cube/archetypes.py`: archetype mapping
+- `src/story_cube/reviewer_agent.py`: automated review and archetype hints
+- `src/story_cube/multiplayer_store.py`: Supabase room persistence
+- `src/story_cube/cube_data.py`: dice packs and prompts
+
+## Quick Start
 
 1. Create and activate a virtual environment.
-2. Install dependencies:
-   - pip install -r requirements.txt
-3. Run the app:
-   - streamlit run app.py
+2. Install dependencies.
 
-## MVP game loop
+```bash
+pip install -r requirements.txt
+```
 
-1. Select a game mode.
-2. Define the mandatory round objective (message-first).
-3. Roll cubes.
-4. Write story or idea.
-5. Assess non-competitive learning signals and export session KPI.
+3. Run the app.
 
-## Interactive Demo Flow (Multiplayer)
+```bash
+streamlit run app.py
+```
 
-1. Configure 5-20 players and rounds.
-2. Start a new interactive game session.
-3. For each turn, the active player gets 3 dice faces.
-4. Submit contribution with optional references to other players.
-5. Review live timeline and per-contribution signals.
-6. At end game, review archetypes and export JSON/XLSX report.
+## Multiplayer Setup (Supabase)
 
-## Suggested next steps
+For shared-room multiplayer, configure Supabase and Streamlit secrets:
 
-- Add custom cube packs by theme (security, data, UX, sustainability).
-- Add timed rounds and team leaderboard.
-- Add PPT export for workshop recap.
+- `SUPABASE_URL`
+- `SUPABASE_ANON_KEY`
 
-## Team workflow for the pilot
+Full setup guide: `docs/supabase_multiplayer_setup.md`.
 
-1. Use docs/game-mechanics-decision-matrix.md to pick primary mechanic and fallback.
-2. Assign roles with data/templates/group_work_template.csv.
-3. Dry run the activity using docs/session-runbook.md.
-4. Run live session and collect feedback in data/templates/session_feedback_template.csv.
-5. Capture improvements in docs/next-meeting-agenda.md for follow-up.
+## Repository Structure
+
+- `app.py`: Streamlit entrypoint
+- `src/story_cube/`: game engine and domain modules
+- `data/sessions/`: exported game sessions
+- `design/`: UI mockups and reference screens
+- `docs/`: architecture and setup notes
+- `tests/`: smoke and validation tests
+
+## Roadmap
+
+- Facilitator mode dashboard (team-level recap)
+- Smarter scoring signals and prompt adaptation
+- Additional themed dice packs
+- Presentation-ready report exports
