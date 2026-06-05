@@ -5,7 +5,7 @@ from uuid import uuid4
 
 from .archetypes import build_player_profile
 from .engine import roll_default_cubes
-from .models import CollaborativeGameState, Player, PlayerProfile, StoryContribution
+from .models import CollaborativeGameState, ContributionScore, Player, PlayerProfile, StoryContribution
 from .scoring import aggregate_player_dimension_averages, score_contribution
 
 
@@ -45,14 +45,18 @@ def submit_contribution(
     rolled_faces,
     referenced_player_ids: list[str] | None = None,
     included_quiet_player: bool = False,
+    manual_score: ContributionScore | None = None,
+    reviewer_archetype_hint: str | None = None,
 ) -> StoryContribution:
     referenced_player_ids = referenced_player_ids or []
-    score = score_contribution(
-        text=text,
-        rolled_face_labels=[face.label for face in rolled_faces],
-        referenced_player_ids=referenced_player_ids,
-        included_quiet_player=included_quiet_player,
-    )
+    score = manual_score
+    if not score:
+        score = score_contribution(
+            text=text,
+            rolled_face_labels=[face.label for face in rolled_faces],
+            referenced_player_ids=referenced_player_ids,
+            included_quiet_player=included_quiet_player,
+        )
 
     contribution = StoryContribution(
         contribution_id=str(uuid4()),
@@ -65,6 +69,7 @@ def submit_contribution(
         referenced_player_ids=referenced_player_ids,
         included_quiet_player=included_quiet_player,
         score=score,
+        reviewer_archetype_hint=reviewer_archetype_hint,
     )
 
     state.contributions.append(contribution)

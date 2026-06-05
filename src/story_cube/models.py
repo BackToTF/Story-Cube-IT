@@ -49,6 +49,7 @@ class StoryContribution:
     referenced_player_ids: list[str] = field(default_factory=list)
     included_quiet_player: bool = False
     score: ContributionScore | None = None
+    reviewer_archetype_hint: str | None = None
 
 
 @dataclass(frozen=True)
@@ -117,6 +118,7 @@ class CollaborativeGameState:
                     }
                     if c.score
                     else None,
+                    "reviewer_archetype_hint": c.reviewer_archetype_hint,
                 }
                 for c in self.contributions
             ],

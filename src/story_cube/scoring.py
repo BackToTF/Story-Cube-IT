@@ -29,15 +29,17 @@ def score_contribution(
     lower = text.lower()
     words = re.findall(r"\b[a-zA-Z]{3,}\b", lower)
 
-    creativity = 1.0
+    creativity = 1.2
     if len(set(words)) >= 20:
         creativity += 1.0
     if any(token in lower for token in ("imagine", "unexpected", "new", "alternative", "scenario")):
         creativity += 1.0
+    if any(token in lower for token in ("surreal", "dream", "time-travel", "parallel", "myth", "absurd")):
+        creativity += 1.0
     if text.count("?") >= 1 or text.count("!") >= 1:
         creativity += 0.5
 
-    technical = 1.0
+    technical = 0.8
     technical_tokens = (
         "adf",
         "pipeline",
@@ -50,7 +52,7 @@ def score_contribution(
         "lineage",
         "governance",
     )
-    technical += min(2.5, 0.5 * sum(1 for token in technical_tokens if token in lower))
+    technical += min(2.2, 0.45 * sum(1 for token in technical_tokens if token in lower))
     if any(face.lower() in lower for face in rolled_face_labels):
         technical += 1.0
 

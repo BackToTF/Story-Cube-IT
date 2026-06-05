@@ -33,6 +33,15 @@ Story Cube IT is a custom game to build creativity for data and AI-era skills su
 4. Write story or idea.
 5. Assess non-competitive learning signals and export session KPI.
 
+## Interactive Demo Flow (Multiplayer)
+
+1. Configure 5-20 players and rounds.
+2. Start a new interactive game session.
+3. For each turn, the active player gets 3 dice faces.
+4. Submit contribution with optional references to other players.
+5. Review live timeline and per-contribution signals.
+6. At end game, review archetypes and export JSON/XLSX report.
+
 ## Suggested next steps
 
 - Add custom cube packs by theme (security, data, UX, sustainability).
