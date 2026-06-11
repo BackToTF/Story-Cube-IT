@@ -53,6 +53,7 @@ class SupabaseRoomStore:
         max_rounds: int,
         mode: str,
         pack_name: str,
+        game_mode: str,
     ) -> dict[str, Any]:
         room_code = self.generate_room_code()
         player_name = host_name.strip()
@@ -66,6 +67,7 @@ class SupabaseRoomStore:
             "objective": objective,
             "max_rounds": int(max_rounds),
             "mode": mode,
+            "game_mode": game_mode,
             "pack_name": pack_name,
             "host_name": player_name,
             "players": [{"display_name": player_name}],

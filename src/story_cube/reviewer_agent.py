@@ -35,12 +35,20 @@ def review_open_story(
     rolled_face_labels: list[str],
     referenced_player_ids: list[str] | None = None,
     included_quiet_player: bool = False,
+    story_phase: str | None = None,
+    selected_options: list[str] | None = None,
+    is_intervention: bool = False,
+    intervening_player_id: str | None = None,
 ) -> AgentReview:
     score = score_contribution(
         text=text,
         rolled_face_labels=rolled_face_labels,
         referenced_player_ids=referenced_player_ids,
         included_quiet_player=included_quiet_player,
+        story_phase=story_phase,
+        selected_options=selected_options,
+        is_intervention=is_intervention,
+        intervening_player_id=intervening_player_id,
     )
     archetype_hint = _archetype_from_score(score)
     rationale = (
@@ -52,7 +60,7 @@ def review_open_story(
 
 def review_multiple_choice(option_payloads: list[dict[str, object]]) -> AgentReview:
     if not option_payloads:
-        base = ContributionScore(2.0, 2.0, 2.0, 2.0)
+        base = ContributionScore(2.0, 2.0, 2.0, 2.0, 2.0)
         return AgentReview(base, "Facilitator", "No options selected, default neutral profile applied.")
 
     creativity = 0.0
@@ -75,6 +83,7 @@ def review_multiple_choice(option_payloads: list[dict[str, object]]) -> AgentRev
         technical_coherence=round(technical / n, 2),
         inclusivity_awareness=round(inclusivity / n, 2),
         collaboration=round(collaboration / n, 2),
+        clarity_coherence=2.0,
     )
 
     archetype_hint = Counter(archetypes).most_common(1)[0][0]

@@ -1,0 +1,208 @@
+{
+  "game_id": "f900e69f-35f0-43a2-8f2e-620e68e6232a",
+  "mode": "collaborative",
+  "game_mode": "basic",
+  "objective": "Build a surreal IT adventure that still keeps a plausible data-stack backbone and inclusive impact.",
+  "pack_name": "storybook_simple",
+  "max_rounds": 2,
+  "story_phase": "problem",
+  "current_round": 3,
+  "current_turn": 5,
+  "created_at": "2026-06-05T15:41:00.678883",
+  "players": [
+    {
+      "player_id": "P1",
+      "display_name": "Player 1"
+    },
+    {
+      "player_id": "P2",
+      "display_name": "Player 2"
+    }
+  ],
+  "contributions": [
+    {
+      "contribution_id": "0eeae16d-860e-4595-b6bd-96138069babe",
+      "player_id": "P1",
+      "turn_index": 1,
+      "round_index": 1,
+      "created_at": "2026-06-05T15:41:15.571470",
+      "story_phase": "once_upon_a_time",
+      "text": "Una piccola domanda",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "Una piccola domanda"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "OnceUpon",
+          "face_id": 6,
+          "label": "Seme",
+          "prompt": "Pick the first seed of the tale.",
+          "options": [
+            "A tiny idea",
+            "A brave wish",
+            "A little question"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "85b5edb5-d67f-47fa-b398-29c40946862e",
+      "player_id": "P2",
+      "turn_index": 2,
+      "round_index": 1,
+      "created_at": "2026-06-05T15:41:27.171230",
+      "story_phase": "who",
+      "text": "A funny robot",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "A funny robot"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Character",
+          "face_id": 2,
+          "label": "Helper",
+          "prompt": "Choose the second character.",
+          "options": [
+            "A helpful sister",
+            "A funny robot",
+            "A gentle giant"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "e383b050-69ea-41bc-87cd-4032419c86dc",
+      "player_id": "P1",
+      "turn_index": 3,
+      "round_index": 2,
+      "created_at": "2026-06-05T15:41:34.129406",
+      "story_phase": "where",
+      "text": "A secret garden",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "A secret garden"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Setting",
+          "face_id": 2,
+          "label": "Castle",
+          "prompt": "Choose a place for the tale.",
+          "options": [
+            "A bright castle",
+            "A secret garden",
+            "A friendly village"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "a71fbf7e-1c61-43c9-90b3-5076acbfb089",
+      "player_id": "P2",
+      "turn_index": 4,
+      "round_index": 2,
+      "created_at": "2026-06-05T15:41:41.209488",
+      "story_phase": "what",
+      "text": "They discovered a treasure",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "They discovered a treasure"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Event",
+          "face_id": 1,
+          "label": "Find",
+          "prompt": "Choose what happens.",
+          "options": [
+            "They found a clue",
+            "They discovered a treasure",
+            "They met someone new"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    }
+  ],
+  "profiles": [
+    {
+      "player": "Player 1",
+      "archetype": "Facilitator",
+      "description": "Maintains group flow and supports balanced participation.",
+      "contribution_style": "Guiding, balanced, and participation-aware.",
+      "team_impact": "Keeps the room moving and lowers participation friction.",
+      "email_summary": "Facilitator: Maintains group flow and supports balanced participation. Team impact: Keeps the room moving and lowers participation friction.",
+      "creativity": 1.2,
+      "technical": 1.2,
+      "inclusion": 1.0,
+      "collaboration": 1.0,
+      "clarity": 2.65
+    },
+    {
+      "player": "Player 2",
+      "archetype": "Facilitator",
+      "description": "Maintains group flow and supports balanced participation.",
+      "contribution_style": "Guiding, balanced, and participation-aware.",
+      "team_impact": "Keeps the room moving and lowers participation friction.",
+      "email_summary": "Facilitator: Maintains group flow and supports balanced participation. Team impact: Keeps the room moving and lowers participation friction.",
+      "creativity": 1.2,
+      "technical": 1.2,
+      "inclusion": 1.0,
+      "collaboration": 1.0,
+      "clarity": 2.65
+    }
+  ]
+}

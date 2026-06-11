@@ -4,13 +4,41 @@ from .models import PlayerProfile
 
 
 ARCHETYPE_DEFINITIONS = {
-    "Logical": "Strong in technical structure and coherent data pipeline reasoning.",
-    "Creative": "Generates vivid and imaginative narrative moves.",
-    "Connector": "Builds bridges across teammates ideas and keeps the story cohesive.",
-    "Innovator": "Proposes unconventional but useful approaches.",
-    "Facilitator": "Maintains group flow and supports balanced participation.",
-    "Analytical": "Highlights detail, quality checks, and consistency.",
-    "Empathetic": "Prioritizes inclusion, diverse perspectives, and human impact.",
+    "Logical": {
+        "description": "Strong in technical structure and coherent data pipeline reasoning.",
+        "style": "Structured, precise, and systems-oriented.",
+        "impact": "Turns ambiguity into a clean sequence the team can follow.",
+    },
+    "Creative": {
+        "description": "Generates vivid and imaginative narrative moves.",
+        "style": "Inventive, surprising, and idea-rich.",
+        "impact": "Keeps the story fresh and prevents flat moments.",
+    },
+    "Connector": {
+        "description": "Builds bridges across teammates ideas and keeps the story cohesive.",
+        "style": "Bridging, relational, and continuity-focused.",
+        "impact": "Links contributions together so nobody feels dropped.",
+    },
+    "Innovator": {
+        "description": "Proposes unconventional but useful approaches.",
+        "style": "Experimental, bold, and adaptive.",
+        "impact": "Introduces new paths when the group gets stuck.",
+    },
+    "Facilitator": {
+        "description": "Maintains group flow and supports balanced participation.",
+        "style": "Guiding, balanced, and participation-aware.",
+        "impact": "Keeps the room moving and lowers participation friction.",
+    },
+    "Analytical": {
+        "description": "Highlights detail, quality checks, and consistency.",
+        "style": "Careful, validating, and coherence-driven.",
+        "impact": "Reduces errors and strengthens the story logic.",
+    },
+    "Empathetic": {
+        "description": "Prioritizes inclusion, diverse perspectives, and human impact.",
+        "style": "Inclusive, considerate, and human-centered.",
+        "impact": "Makes space for quieter voices and wider perspectives.",
+    },
 }
 
 
@@ -37,9 +65,13 @@ def map_dimensions_to_archetype(dimension_averages: dict[str, float]) -> str:
 
 def build_player_profile(player_id: str, dimension_averages: dict[str, float]) -> PlayerProfile:
     archetype = map_dimensions_to_archetype(dimension_averages)
+    definition = ARCHETYPE_DEFINITIONS[archetype]
     return PlayerProfile(
         player_id=player_id,
         dominant_archetype=archetype,
-        description=ARCHETYPE_DEFINITIONS[archetype],
+        description=definition["description"],
         dimension_averages=dimension_averages,
+        contribution_style=definition["style"],
+        team_impact=definition["impact"],
+        email_summary=f"{archetype}: {definition['description']} Team impact: {definition['impact']}",
     )

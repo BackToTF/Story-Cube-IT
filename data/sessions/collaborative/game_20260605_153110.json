@@ -1,0 +1,208 @@
+{
+  "game_id": "161ebab8-825e-4da7-98e0-66d07efe11fe",
+  "mode": "collaborative",
+  "game_mode": "basic",
+  "objective": "Build a surreal IT adventure that still keeps a plausible data-stack backbone and inclusive impact.",
+  "pack_name": "storybook_simple",
+  "max_rounds": 2,
+  "story_phase": "problem",
+  "current_round": 3,
+  "current_turn": 5,
+  "created_at": "2026-06-05T15:29:39.985316",
+  "players": [
+    {
+      "player_id": "P1",
+      "display_name": "Player 1"
+    },
+    {
+      "player_id": "P2",
+      "display_name": "Player 2"
+    }
+  ],
+  "contributions": [
+    {
+      "contribution_id": "5961f12d-c8bf-45f6-a981-b6deea6b185b",
+      "player_id": "P1",
+      "turn_index": 1,
+      "round_index": 1,
+      "created_at": "2026-06-05T15:29:50.174680",
+      "story_phase": "once_upon_a_time",
+      "text": "A soft wind answered",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "A soft wind answered"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "OnceUpon",
+          "face_id": 5,
+          "label": "Voce",
+          "prompt": "Pick the first voice.",
+          "options": [
+            "A child spoke",
+            "A friend listened",
+            "A soft wind answered"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 2.0,
+        "clarity_coherence": 2.65,
+        "total": 8.05
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "33bd379e-b0c2-4d15-9246-762315c9237b",
+      "player_id": "P2",
+      "turn_index": 2,
+      "round_index": 1,
+      "created_at": "2026-06-05T15:30:51.092956",
+      "story_phase": "who",
+      "text": "A talking star",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "A talking star"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Character",
+          "face_id": 6,
+          "label": "Magic",
+          "prompt": "Choose a special character.",
+          "options": [
+            "A little wizard",
+            "A moon fairy",
+            "A talking star"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "e4403773-649a-4717-81d7-90db60300700",
+      "player_id": "P1",
+      "turn_index": 3,
+      "round_index": 2,
+      "created_at": "2026-06-05T15:31:04.930387",
+      "story_phase": "where",
+      "text": "A secret garden",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "A secret garden"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Setting",
+          "face_id": 2,
+          "label": "Castle",
+          "prompt": "Choose a place for the tale.",
+          "options": [
+            "A bright castle",
+            "A secret garden",
+            "A friendly village"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    },
+    {
+      "contribution_id": "0f62c558-20b4-440e-aeec-634c86827a0f",
+      "player_id": "P2",
+      "turn_index": 4,
+      "round_index": 2,
+      "created_at": "2026-06-05T15:31:10.279537",
+      "story_phase": "what",
+      "text": "They built something",
+      "referenced_player_ids": [],
+      "included_quiet_player": false,
+      "selected_options": [
+        "They built something"
+      ],
+      "custom_text": "",
+      "is_intervention": false,
+      "intervening_player_id": null,
+      "rolled_faces": [
+        {
+          "cube_id": "Event",
+          "face_id": 5,
+          "label": "Try",
+          "prompt": "Choose a trial moment.",
+          "options": [
+            "They tried again",
+            "They built something",
+            "They opened a door"
+          ]
+        }
+      ],
+      "score": {
+        "creativity": 1.2,
+        "technical_coherence": 1.2,
+        "inclusivity_awareness": 1.0,
+        "collaboration": 1.0,
+        "clarity_coherence": 2.65,
+        "total": 7.050000000000001
+      },
+      "reviewer_archetype_hint": "Facilitator"
+    }
+  ],
+  "profiles": [
+    {
+      "player": "Player 1",
+      "archetype": "Facilitator",
+      "description": "Maintains group flow and supports balanced participation.",
+      "contribution_style": "Guiding, balanced, and participation-aware.",
+      "team_impact": "Keeps the room moving and lowers participation friction.",
+      "email_summary": "Facilitator: Maintains group flow and supports balanced participation. Team impact: Keeps the room moving and lowers participation friction.",
+      "creativity": 1.2,
+      "technical": 1.2,
+      "inclusion": 1.0,
+      "collaboration": 1.5,
+      "clarity": 2.65
+    },
+    {
+      "player": "Player 2",
+      "archetype": "Facilitator",
+      "description": "Maintains group flow and supports balanced participation.",
+      "contribution_style": "Guiding, balanced, and participation-aware.",
+      "team_impact": "Keeps the room moving and lowers participation friction.",
+      "email_summary": "Facilitator: Maintains group flow and supports balanced participation. Team impact: Keeps the room moving and lowers participation friction.",
+      "creativity": 1.2,
+      "technical": 1.2,
+      "inclusion": 1.0,
+      "collaboration": 1.0,
+      "clarity": 2.65
+    }
+  ]
+}
