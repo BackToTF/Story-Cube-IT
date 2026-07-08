@@ -1,105 +1,105 @@
 # Story Cube - I&D Edition
 
-An interactive collaborative game that transforms Inclusion and Diversity from concept into lived experience through storytelling, gamification, and self-awareness.
+Un gioco collaborativo interattivo che trasforma Inclusion and Diversity da concetto astratto a esperienza concreta, attraverso storytelling, gamification e consapevolezza.
 
-## Why It Matters
+## Perche E Importante
 
-Inclusion is not only about representation. It is also about how people think, contribute, and collaborate.
+L'inclusione non riguarda solo la rappresentazione. Riguarda anche il modo in cui le persone pensano, contribuiscono e collaborano.
 
-Story Cube helps teams:
+Story Cube aiuta i team a:
 
-- Experience inclusion in action
-- Value different cognitive styles
-- Build individual and team awareness
+- Vivere l'inclusione in azione
+- Valorizzare stili cognitivi diversi
+- Rafforzare la consapevolezza individuale e di gruppo
 
-## Core Experience
+## Esperienza Di Gioco
 
-Players take turns rolling three thematic dice (tech and inclusion prompts) and collaboratively build a shared story.
+I giocatori si alternano nel lanciare dadi tematici e costruiscono insieme una storia condivisa, una fase alla volta.
 
-Each contribution is:
+Ogni contributo e:
 
-- Visible
-- Valued
-- Uniquely different
+- Visibile
+- Riconosciuto
+- Unico
 
-## Key Features
+## Funzionalita Principali
 
-- Dice-driven storytelling with tech and I&D prompts
-- Collaborative narrative timeline with chat-like flow
-- Multi-dimensional scoring:
-	- Creativity
-	- Technical coherence
-	- Inclusivity
-	- Collaboration
-- Archetype profiling for each player
-- Multiplayer mode with Supabase shared rooms
-- Exportable session results (JSON and XLSX)
+- Storytelling guidato dai dadi con prompt tech e I&D
+- Timeline narrativa collaborativa in stile chat
+- Scoring multidimensionale:
+	- Creativita
+	- Coerenza tecnica
+	- Inclusivita
+	- Collaborazione
+- Profilazione archetipica per ogni giocatore
+- Modalita multiplayer con stanze condivise su Supabase
+- Risultati esportabili di sessione (JSON e XLSX)
 
-## Archetype System (Core Insight)
+## Sistema Di Archetipi (Insight Centrale)
 
-At the end of each session, every player receives a contribution profile such as:
+Alla fine di ogni sessione, ogni giocatore riceve un profilo contributivo, per esempio:
 
-- Creative: imagination and storytelling
-- Logical: structured and analytical thinking
-- Empathetic: focus on people and inclusion
-- Innovator: out-of-the-box thinking
-- Connector: linking ideas and perspectives
+- Creative: immaginazione e capacita narrativa
+- Logical: pensiero strutturato e analitico
+- Empathetic: attenzione alle persone e all'inclusione
+- Innovator: approccio originale e fuori dagli schemi
+- Connector: capacita di collegare idee e prospettive
 
-The goal is not competition. The goal is self-awareness and team awareness.
+L'obiettivo non e la competizione. L'obiettivo e aumentare la consapevolezza personale e del team.
 
-## How It Works
+## Come Funziona
 
-1. Select number of players.
-2. Enter nicknames.
-3. Roll the dice.
-4. Build the story collaboratively.
-5. Receive archetype profiles.
+1. Seleziona il numero di giocatori.
+2. Inserisci i nickname.
+3. Lancia il dado.
+4. Costruisci la storia in modo collaborativo.
+5. Ricevi i profili archetipici finali.
 
-## Screens
+## Schermate
 
 - Setup: ![Setup screen](design/setup_page.png)
-- Nicknames: ![Nickname screen](design/nickname_setup.png)
-- Game: ![Game screen](design/gaming_page.png)
-- Results: ![Results screen](design/results_page.png)
+- Nickname: ![Nickname screen](design/nickname_setup.png)
+- Gioco: ![Game screen](design/gaming_page.png)
+- Risultati: ![Results screen](design/results_page.png)
 
-## Tech Stack
+## Stack Tecnologico
 
 - Python 3.14
 - Streamlit
 - Pandas
 - OpenPyXL
-- Supabase (multiplayer persistence)
+- Supabase (persistenza multiplayer)
 
-## Architecture
+## Architettura
 
-- `app.py`: UI and orchestration
-- `src/story_cube/models.py`: domain entities
+- `app.py`: UI e orchestrazione
+- `src/story_cube/models.py`: entita di dominio
 - `src/story_cube/collaborative_game.py`: game loop
-- `src/story_cube/scoring.py`: evaluation logic
-- `src/story_cube/archetypes.py`: profile mapping
-- `src/story_cube/reviewer_agent.py`: automated scoring hints
-- `src/story_cube/multiplayer_store.py`: shared room persistence
-- `src/story_cube/cube_data.py`: dice packs and prompts
+- `src/story_cube/scoring.py`: logica di valutazione
+- `src/story_cube/archetypes.py`: mappatura dei profili
+- `src/story_cube/reviewer_agent.py`: suggerimenti di scoring automatico
+- `src/story_cube/multiplayer_store.py`: persistenza delle stanze condivise
+- `src/story_cube/cube_data.py`: pacchetti dadi e prompt
 
-## Quick Start
+## Avvio Rapido
 
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Multiplayer Setup
+## Configurazione Multiplayer
 
-Set these environment variables (or Streamlit secrets):
+Imposta queste variabili d'ambiente (oppure i segreti Streamlit):
 
 - `SUPABASE_URL`
 - `SUPABASE_ANON_KEY`
 
-Full guide: `docs/supabase_multiplayer_setup.md`
+Guida completa: `docs/supabase_multiplayer_setup.md`
 
 ## Roadmap
 
-- Facilitator dashboard with team insights
-- Smarter scoring with AI-assisted signals
-- Custom themed dice packs
-- Presentation-ready reports
+- Dashboard facilitatore con insight di team
+- Scoring piu evoluto con segnali AI-assisted
+- Pacchetti dadi tematici personalizzati
+- Report pronti per presentazione
