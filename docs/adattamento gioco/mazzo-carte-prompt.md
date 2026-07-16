@@ -44,7 +44,7 @@ Questa versione e allineata all'Excel e usa testi semplici, adatti a bambini, co
 - S02 - Si divide il compito in piccoli passi.
 - S03 - Si prova un'idea nuova insieme.
 - S04 - Si chiede aiuto a chi e piu esperto.
-- S05 - Ogni bambino usa il suo talento.
+- S05 - Un personaggio misterioso arriva in aiuto.
 - S06 - Si trova un piano semplice per tutti.
 
 ## 6. Fase Finale (6 carte)
